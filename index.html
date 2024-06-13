@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 align="center">Weather App</h1>
+        
+        <form>
+          <div class="search_box">
+            <input
+              type="search"
+              placeholder="Enter your Location"
+              class="inputBox"
+            />
+            <button class="searchBtn">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </form>
+        <h3 align="center" id="msg"></h3>
+      </div>
+      <div class="location_not_found">
+        <h1>Location Not Found !!!</h1>
+        <img src="404.png" alt="">
+      </div>
+      <div class="weather_body">
+        <img src="" alt="" id="weatherImage"/>
+
+        <div class="weather-box">
+          <p class="temperature">0<sup>°C</sup></p>
+          <p class="description">Light Rain</p>
+        </div>
+
+        <div class="weather_details">
+          <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="text">
+              <span class="HumidityPer">45%</span>
+              <p>Humidity</p>
+            </div>
+            
+          </div>
+
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span class="windSpeed">12Km/H</span>
+              <p>Wind Speed</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
